@@ -146,9 +146,9 @@ class SensorActuator:
 
     async def run(self):
         while True:
-            self.move_to(4, 4)  # move to charger location
-            self.recharge(self.chargers[0], 1.0)  # charge fully
-            self.move_to(0, 0)  # move back to starting location
+            self.move_to(4, 4)  # braukt pie uzlades stacijas
+            self.recharge(self.chargers[0], 1.0)  # uzladeties
+            self.move_to(0, 0)  # braukt atpakal
             await asyncio.sleep(3)
 
     # agents uzladas
