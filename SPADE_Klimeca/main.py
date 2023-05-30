@@ -160,7 +160,7 @@ class SensorActuator:
 
         for charge_level in range(int(current_charge * 100), int(target_charge * 100) + 1, 10):
             print("Battery charge level: {}%".format(charge_level))
-            time.sleep(3)  # Add a delay to simulate charging time
+            time.sleep(3)  
 
         self.car.set_chargestate(target_charge)
         print("Current charge level: {:.2%}".format(self.car.get_chargestate()))
